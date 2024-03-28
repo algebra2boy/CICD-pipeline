@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "eslint": "eslint . --fix",
+    "start": "node src/index.js",
+    "eslint": "eslint src/ --config .eslintrc.json",
     "prettier": "prettier --write .",
     "test": "jest tests"
   },
