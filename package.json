@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint . --fix"
+    "eslint": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
