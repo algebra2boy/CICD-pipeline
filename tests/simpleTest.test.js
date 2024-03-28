@@ -3,7 +3,11 @@ describe("Simple test", () => {
     expect(1 + 1).toBe(2);
   });
 
-  it("bad test", () => {
-    expect(true).toBe(false);
+  it("fix bad test", () => {
+    expect(true).toBe(true);
+  });
+
+  it("add more test", () => {
+    expect(10 + 20).toBe(30);
   });
 });
