@@ -2,12 +2,12 @@ import express from "express";
 
 const app = express();
 
-            app.get("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-        app.get("/iceCream", (req, res) => {
-                res.send("Hello I love ice cream");
+app.get("/iceCream", (req, res) => {
+  res.send("Hello I love ice cream");
 });
 
 app.listen(8080, () => {
