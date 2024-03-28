@@ -10,16 +10,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        # Note that we explicitly specify ${{ github.head_ref }} in the checkout Action. 
+        # Note that we explicitly specify ${{ github.head_ref }} in the checkout Action.
         # This is required in order to work with the pull_request event (or any other non-push event).
-        with: 
+        with:
           ref: ${{ github.head_ref }}
-      
-      - name: Install Node.js 
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      
+
       - name: Install dependencies with npm
         run: npm ci
 
@@ -27,5 +27,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Apply formatting changes with prettier"
-      
-
