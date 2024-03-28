@@ -14,6 +14,9 @@ jobs:
         # Note that we explicitly specify ${{ github.head_ref }} in the checkout Action.
         # This is required in order to work with the pull_request event (or any other non-push event).
         with:
+          # documentation says we need to add this for security reasons
+          # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file
+          token: ${{ secrets.PAT }}
           ref: ${{ github.head_ref }}
 
       - name: Install Node.js
