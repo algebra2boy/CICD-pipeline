@@ -12,6 +12,7 @@ To write a Github Action workflow, a `.github` folder must be created. Inside th
 you can write your workflow file in the yml file.
 
 Once the pipeline is set up, you can use it to automate various tasks such as:
+
 - Running eslint to check bugs
 - Running unit tests
 - Run prettier to check code format
