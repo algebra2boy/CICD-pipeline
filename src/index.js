@@ -10,6 +10,10 @@ app.get("/iceCream", (req, res) => {
   res.send("Hello I love ice cream");
 });
 
+app.get("/cicd", (req, res) => {
+  res.send("Hello I love ice cream");
+});
+
 app.listen(8080, () => {
   console.log("Server is running on http://localhost:8080");
 });
